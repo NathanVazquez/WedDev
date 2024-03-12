@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> CSS Flexbox Practice</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Web Favicon.jpg">
+<style>
+    p, h4, img{
+        text-align:center;
+        vertical-align:center;
+
+    }
+    img{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+
+    }
+    .flex-container{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items: center;
+        flex-wrap:wrap;
+
+    }
+    .flex-container > div{
+    /* this is for the children inside flex-container class. becareful where you put code for each element */
+        height:300px;
+        width:100px;
+
+    }
+    #box1{
+        
+        background-color:orange;
+        width: 100px;
+    }
+
+    #box2{
+        background-color:red;
+        width: 100px;
+    }
+
+    #box3{
+        background-color:green;
+    }
+    #box4{
+        background-color:purple;
+    }
+
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="box1">
+            <h4>orange product</h4>
+            <p>This product is stellar, please buy it!</p>
+            <img src="/WebDev/Assets/Headshot.jpg" height="50px" style="margin:center;">
+            <div class="pricing-container">
+                <div class="price-div">
+                    <p>Costs $50</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="box2">
+            <h4>Green product</h4>
+            <p>This product is stellar, please buy it!</p>
+            <img src="/WebDev/Assets/Headshot.jpg" height="50px" style="margin:center;">
+            <div class="pricing-container">
+                <div class="price-div">
+                    <p>Costs $50</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="box3">
+            <h4>Green product</h4>
+            <p>This product is stellar, please buy it!</p>
+            <img src="/WebDev/Assets/Headshot.jpg" height="50px" style="margin:center;">
+            <div class="pricing-container">
+                <div class="price-div">
+                    <p>Costs $50</p>
+                </div>
+            </div>
+        </div>
+        <div id="box4">
+            <h4>Purple product</h4>
+            <p>This product is stellar, please buy it!</p>
+            <img src="/WebDev/Assets/Headshot.jpg" height="50px" style="margin:center;">
+            <div class="pricing-container">
+                <div class="price-div">
+                    <p>Costs $50</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
