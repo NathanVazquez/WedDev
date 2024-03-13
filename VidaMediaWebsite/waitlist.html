@@ -16,10 +16,14 @@
             opacity:100%;
         }
         
-        body{
+        *, body{
+            overflow-x:hidden;
             background-color:#3E4966;
-            
+            max-width:100vw;
         }   
+        html{
+            max-width:100vw;
+        }
 
     </style>
 </head>
@@ -53,6 +57,9 @@
           <!-- below is the form set on the right hand side of the page-->
           <div class="container" style="justify-content:center; margin:auto; display:block;">
             <!--when viewing this website on mobile devices the columns get squished. I need to add a media query that seperates the image and form into separate rows when the size is belo 420 px-->
+            <!--Improvements
+                1. Separate the boxes when on mobile site
+                2. center the elements-->
             <div class="row form-row">
 
                 <div class="col">
