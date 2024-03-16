@@ -18,7 +18,7 @@ This page is still in development. This page will display all of our best photos
 
 ### contactus.html
 
-This page is still in development. This page will direct people to a simple form that collects their email, phone number, and message to us. All this information will be emailed to us and then a link to out calendly will appear so people can schedule a meeting to meet with us.
+This page will direct people to a simple form that collects their email, phone number, and message to us. All this information will be emailed to us and then a link to out calendly will appear so people can schedule a meeting to meet with us. Currently this only displays the form but the submit button doesn't email us the form. In the next two weeks I will add the JS script to make this possible.
 
 ### aboutus.html
 

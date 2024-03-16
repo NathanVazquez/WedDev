@@ -2,65 +2,118 @@
 <html lang="en">
 <head>
 
-<link rel="stylesheet" href="https://use.typekit.net/jht5ays.css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
-<title>Vida Media</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/jht5ays.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    <title>Vida Media | Albums</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/jht5ays.css">
+    <style>
 
-<style>
+        /*
 
-/*
+        website inspiration:https://www.ckmontphoto.com/
+        elements used: https://getbootstrap.com/docs/5.3/components/carousel/
 
-website inspiration:https://www.ckmontphoto.com/
-elements used: https://getbootstrap.com/docs/5.3/components/carousel/
+        #3E4966 blue
+        #996760 burgundy
+        #704352 wine
+        #995d28 orange
+        #997e58 brown
+        */
+        .carousel-item{
+            height:99vh;
+        }
 
-#3E4966 blue
-#996760 burgundy
-#704352 wine
-#995d28 orange
-#997e58 brown
-*/
-.carousel-item{
-    height:99vh;
-}
+        body{
+            background-color:#3E4966;
+        }
 
-body{
-    background-color:#3E4966;
-}
+        .footer-item{
+            color:white;
+            color:#995d28;
+            
+        }
 
-.footer-item{
-    margin:;
-    color:white;
-    color:#995d28;
-    
-}
 
-.navbar{
-    margin:;
+        #footer{
 
-}
+            width:96%;
+            left:0;
+            bottom:0;
+            text-align:center;
+            
+        }
+        #footer h6{
+            color:#FFEB73;
+        }
 
-#footer{
+        .row{
+            margin-bottom:10px;
+        }
 
-    width:100%;
-    left:0;
-    bottom:0;
-    text-align:center;
-    
-}
+        @media screen and (min-width: 992px) {
+            .footer-item{
+                opacity:0;
+            }
+        }
 
-.row{
-    margin-bottom:10px;
-}
+        .col-sm{
+            margin-bottom:10%;
+        }
 
-@media screen and (min-width: 992px) {
-    .footer-item{
-        opacity:0;
-    }
-}
-</style>
+        .album-titles{
+            font-family: "maryam", sans-serif;
+            font-weight: 400;
+            color:#FFEB73;
+            font-style: normal;
+            font-size:40px;
+            text-align:center;
+            
+        }
+        .container{
+            margin-top:100%;
+            margin-bottom:100%;
+        }
+        @media screen and (max-width: 420px){
+            .carousel-item.active{
+                margin-bottom: 0px;
+            }
+            .container{
+                margin-top:0px;
+                padding-top:0px;
+            }
+            /*body{
+                background-color:red;
+            }*/
+            .col-sm{
+            margin-bottom:0%;
+            }
+        }
+        /*@media screen and (min-width: 481px) and (max-width: 700px){
+            .carousel-item{
+                padding-bottom: -200px;
+                margin-bottom: -350px;
+            }
+
+            .col-sm{
+            margin-bottom:0%;
+            }
+        }
+        @media screen and (min-width: 701px) and (max-width: 900px){
+            .carousel-item{
+                padding-bottom: -200px;
+                margin-bottom: -350px;
+            }
+
+            .col-sm{
+            margin-bottom:0%;
+            }
+        }*/
+
+
+    </style>
 </head>
 <body>
 
@@ -75,7 +128,7 @@ body{
 
 
     <!-- initial pages Home, About me,  (Photo Albums), contact us, join the Waitlist-->
-    <nav class="navbar  >
+    <nav class="navbar" >
         <div class="container-fluid" style="top:0; left:0; ">
             <a class="navbar-brand" href="#">
                 <img src="Assets/Vida-Media Logo 1.png" height="30px">
@@ -98,63 +151,96 @@ body{
     
 
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style=" ">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <!--<a href="/photoalbums.html">-->
-            <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+    <div class=" main-image" data-bs-ride="" >
+        <div class="">
+            <div class="carousel-item active">
+                <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-
-        </div>
-
     </div>
       
+
+    <div class="container" style="margin-bottom:5%; margin-top:-12%;">
         <div class="row">
-            <div class="col">
-
-
-</div>
-
-</div>
-<div class="container">
-<div class="row">
-    <div class="col">
-        <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">    </div>
-
-    <div class="col">
-
- <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+            <div class="col-sm">
+                <div style="padding-top:4%;">
+                <h3 class="album-titles" > Jess x Harold </h3>
+                <h6 class="album-titles" >Maternity photoshoot</h6>
+                <h6 class="album-titles" >At-Home Studio</h6>
+                </div>
+            </div>
+            <div class="col-sm">
+                <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div style="padding-top:3%;">
+                <h3 style="margin:auto;" class="album-titles" > Jess x Rudy </h3>
+                <h6 class="album-titles" >Engagement photoshoot</h6>
+                <h6 class="album-titles" >Event photography</h6>
+                </div>
+            </div>
+            <div class="col-sm">
+                <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div style="padding-top:15%;">
+                <h3 style="margin:auto;" class="album-titles" > Maria V </h3>
+                <h6 class="album-titles" >Event photoshoot</h6>
+                </div>
+            </div>
+            <div class="col-sm">
+                <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div style="padding-top:15%;">
+                <h3 class="album-titles" style="margin:auto;"> Personal Projects </h3>
+                <h6 class="album-titles" >Still lifes and personal projects</h6>
+            </div>
+            </div>
+            <div class="col-sm" style="margin-bottom:0%;">
+                <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
     </div>
-</div>
-</div>
+
+
+
+
+
+
 
 
 
     <!--Below is the code for the footer-->
-      
-    <div id="footer" style="position:fixed;" >
+    <div id="footer" style="position:relative;" >
         <footer >
             <h6 class="footer-item" id="instagram">Instagram</h6>
             <a href="https://www.instagram.com/_vida_media/">
-                <button class="btn btn-outline-danger" style="position:relative;">
+                <button class="btn btn-outline-danger">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" style="display:inline-block;" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827
-                     0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827
-                      16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445
-                       16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01
-                        10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275
-                         1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0
-                          1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5
-                          2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034
-                           1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827
+                    16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445
+                    16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01
+                    10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275
+                    1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0
+                    1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5
+                    2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034
+                    1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                     </svg>
                     @vida.media
                 </button>
             </a>
             <br>
-                <br>
+            <br>
             <div class="containter text-center">
-                <div class="row" >
+                <div class="row">
                     <h6 class="col footer-item">Home</h6>
                     <h6 class="col footer-item">Photo Albums</h6>
                     <h6 class="col footer-item">About Us</h6>
@@ -167,6 +253,6 @@ body{
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
