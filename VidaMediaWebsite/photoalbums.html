@@ -90,27 +90,100 @@
             .col-sm{
             margin-bottom:0%;
             }
+
+            #EventsAlbum{
+                padding-top:1px;
+                padding-bottom:0px;
+            }
+            #EventAlbum{
+                padding-top:5px;
+
+            }
+            /*#MaternityAlbum{
+
+            }
+            #PersonalAlbum{
+
+            }*/
+
         }
-        /*@media screen and (min-width: 481px) and (max-width: 700px){
-            .carousel-item{
-                padding-bottom: -200px;
-                margin-bottom: -350px;
+        @media screen and (min-width: 481px) and (max-width: 700px){
+
+            #EventsAlbum{
+                padding-top:0px;
+                padding-bottom:0px;
+            }
+            #EventAlbum{
+                padding-top:5px;
+                padding-bottom:0px;
+
             }
 
             .col-sm{
             margin-bottom:0%;
             }
         }
+        
         @media screen and (min-width: 701px) and (max-width: 900px){
-            .carousel-item{
+            /*.carousel-item{
                 padding-bottom: -200px;
                 margin-bottom: -350px;
             }
 
+
             .col-sm{
             margin-bottom:0%;
+            }*/
+
+            body{
+
+                
             }
-        }*/
+            #EventsAlbum{
+                padding-top:0px;
+                padding-bottom:0px;
+            }
+            #EventAlbum{
+                padding-top:25px;
+                
+
+            }
+            #MaternityAlbum{
+                padding-top:30px;
+            }
+
+
+            }
+            @media screen and (min-width: 901px){
+            /*.carousel-item{
+                padding-bottom: -200px;
+                margin-bottom: -350px;
+            }
+
+
+            .col-sm{
+            margin-bottom:0%;
+            }*/
+
+            body{
+
+                
+            }
+            #EventsAlbum{
+                padding-top:0px;
+                padding-bottom:0px;
+            }
+            #EventAlbum{
+                padding-top:25px;
+                
+
+            }
+            #MaternityAlbum{
+                padding-top:30px;
+            }
+
+
+            }
 
 
     </style>
@@ -126,19 +199,21 @@
        
 
 
-
+        
     <!-- initial pages Home, About me,  (Photo Albums), contact us, join the Waitlist-->
-    <nav class="navbar" >
-        <div class="container-fluid" style="top:0; left:0; ">
-            <a class="navbar-brand" href="#">
+    
+    
+    <nav class="navbar" style=" margin-bottom:0px;">
+        <div class="container-fluid" style=" left:0; position:relative; padding-bottom:0px; margin-bottom:0px;">
+            <a class="navbar-brand" href="index.html">
                 <img src="Assets/Vida-Media Logo 1.png" height="30px">
                 <h5 style="font-family: rafaella, sans-serif; font-style:normal; display:inline-block; color:#FFEB73;">Vida Media</h5>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="top:0; left:0; position:relative; padding-bottom:0px; margin-bottom:0px;" >
                 <span class="navbar-toggler-icon" ></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"  style="top:0; left:0; position:relative; padding-bottom:0px; margin-bottom:0px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"  style="top:0; left:0; position:relative; padding-bottom:0px; margin-bottom:0px;">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" style="color:#FFEB73;">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="photoalbums.html" style="color:#FFEB73;">Photo Albums</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html" style="color:#FFEB73;">About Us</a></li>
@@ -148,22 +223,25 @@
           </div>
         </div>
       </nav>
-    
 
 
-    <div class=" main-image" data-bs-ride="" >
-        <div class="">
-            <div class="carousel-item active">
+ 
+  <!--  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" stlye="position:absolute;">
+        <div class="carousel-inner" style=" margin-bottom:0px; padding-bottom:0px;">
+            <div class="carousel-item active" style="height:100%; margin-bottom:0px; padding-bottom:0px;">
                 <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
     </div>
-      
+ -->
 
-    <div class="container" style="margin-bottom:5%; margin-top:-12%;">
-        <div class="row">
-            <div class="col-sm">
-                <div style="padding-top:4%;">
+    <div class="container" style="margin-bottom:5%; margin-top:0px;">
+        <div class="row" style="margin-bottom:30px;">
+            <img src="Assets/DSCF2169.png" style=" padding:0px; ">
+        </div>
+        <div class="row" >
+            <div class="col-sm" id="MaternityAlbum">
+                <div >
                 <h3 class="album-titles" > Jess x Harold </h3>
                 <h6 class="album-titles" >Maternity photoshoot</h6>
                 <h6 class="album-titles" >At-Home Studio</h6>
@@ -174,7 +252,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm" id="EventAlbum">
                 <div style="padding-top:3%;">
                 <h3 style="margin:auto;" class="album-titles" > Jess x Rudy </h3>
                 <h6 class="album-titles" >Engagement photoshoot</h6>
@@ -186,7 +264,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm" id="EventsAlbum">
                 <div style="padding-top:15%;">
                 <h3 style="margin:auto;" class="album-titles" > Maria V </h3>
                 <h6 class="album-titles" >Event photoshoot</h6>
@@ -197,7 +275,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm"  id="personalAlbum">
                 <div style="padding-top:15%;">
                 <h3 class="album-titles" style="margin:auto;"> Personal Projects </h3>
                 <h6 class="album-titles" >Still lifes and personal projects</h6>
@@ -208,12 +286,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
 
 
@@ -252,7 +324,30 @@
     </div>
 
 
+<script>
+    if ("geolocation" in navigator) {
+  // Prompt user for permission to access their location
+  navigator.geolocation.getCurrentPosition(
+    // Success callback function
+    (position) => {
+      // Get the user's latitude and longitude coordinates
+      const lat = position.coords.latitude;
+      const lng = position.coords.longitude;
 
+      // Do something with the location data, e.g. display on a map
+      console.log(`Latitude: ${lat}, longitude: ${lng}`);
+    },
+    // Error callback function
+    (error) => {
+      // Handle errors, e.g. user denied location sharing permissions
+      console.error("Error getting user location:", error);
+    }
+  );
+} else {
+  // Geolocation is not supported by the browser
+  console.error("Geolocation is not supported by this browser.");
+}
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
