@@ -65,7 +65,8 @@
                 1. Separate the boxes when on mobile site
                 2. center the elements
                 3. make the form work, code the JS portion
-                4. fix overflow on headers-->
+                4. fix overflow on headers
+                5. create and HTML email format for inquiries-->
             <div class="row-1 form-row">
 
                 <div class="col">
@@ -81,14 +82,14 @@
                             <p style="margin-bottom:0px;">Full Name</p>
                         <div class=" col form-floating mb-3">
                     
-                            <input type="text" class="form-control" id="floatingInput" >
-                            <label for="floatingInput">First name - Last name</label>
+                            <input type="text" class="form-control" id="name" >
+                            <label for="floatingInput" style="margin-left:10px;">Full name</label>
                         </div>
                         <p style="margin-bottom:0px;">Email Address</p>
                         <div class="col form-floating mb-3">
                     
-                            <input type="email" class="form-control" id="floatingInput" >
-                            <label for="floatingInput">name@example.com</label>
+                            <input type="email" class="form-control" id="email" >
+                            <label for="floatingInput" style="margin-left:10px;">name@example.com</label>
                         </div>
                     </div>
                     
@@ -96,22 +97,22 @@
                         <p style="margin-bottom:0px;">Phone Number</p>
                     <div class="col form-floating mb-3">
                     
-                        <input type="tel" class="form-control" id="floatingInput" >
-                        <label for="floatingInput">777-777-7777</label>
+                        <input type="tel" class="form-control" id="number" >
+                        <label for="floatingInput" style="margin-left:10px;">777-777-7777</label>
                     </div>
 
                     <p style="margin-bottom:0px;">How did you hear about us?</p>
                     <div class="col form-floating mb-3">
                     
-                        <input type="radio" class="form-control" id="floatingInput" >
-                        <label for="floatingInput">Friends & Family, Instagram, Word of mouth</label>
+                        <input type="text" class="form-control" id="outreachMethod" >
+                        <label for="floatingInput" style="margin-left:10px;"> Friends & Family, Instagram, Word of mouth</label>
 
                     </div>
                 </div>
                 <p style="margin-bottom:0px;">What kind of project are you looking for?</p>
                 <div class="col form-floating mb-3">
                     
-                    <input type="text" class="form-control" id="floatingInput" >
+                    <input type="text" class="form-control" id="projectType" >
                     <label for="floatingInput">Maternity, Wedding, Engagement, Portraits, Studio Portraits</label>
 
                 </div>
@@ -119,7 +120,7 @@
                 <p style="margin-bottom:0px;">Date of the photoshoot?</p>
                 <div class="col form-floating mb-3">
                     
-                    <input type="date" class="form-control" id="floatingInput">
+                    <input type="date" class="form-control" id="eventDate">
                     <!--<label for="floatingInput">Date of the photoshoot?</label>-->
 
                 </div>
@@ -127,7 +128,7 @@
                 <p style="margin-bottom:0px;">Location of the photoshoot?</p>
                 <div class="col form-floating mb-3">
                     
-                    <input type="text" class="form-control" id="floatingInput" >
+                    <input type="text" class="form-control" id="photoshootLocation" >
                     <label for="floatingInput">City/Venue/etc</label>
 
                 </div>
@@ -135,23 +136,24 @@
                 <p style="margin-bottom:0px;">Do you have any questions for us?</p>
                 <div class="col form-floating mb-3">
                     
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="text" class="form-control" id="message" >
                     <label for="floatingInput">Ask us any questions you have</label>
 
                 </div>
                         <div class="checkbox mb-3">
                         
                         </div>
-                            <button class="w-100 btn btn-lg btn-success" type="button">Submit!</button>
+                            <button class="w-100 btn btn-lg btn-success" type="button" onclick="sendContactInformation()">Submit!</button>
                             <hr class="my-4">
-                            <small class="text-muted"></small>
+                            <small class="text-muted" id="form-subtitle">You will get an email once your form has been submitted</small>
                     </form>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
 
+        <br>
+        <br>
+        <!--
         <div id="footer" class="container" style="margin-left:45%;" >
             <footer class="row-sm row" >
                 <div class="col">
@@ -161,16 +163,48 @@
                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                     </svg>
                     @vida.media
-                    <!--<h6 class="footer-item" id="instagram-handle"> </h6>-->
                 </button>
             </a>
                 <br>
                     <br>
                 </div>
-            </footer>
+            </footer>-->
         </div>
 
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "I4Fd77AD7ObuRS0KN",
+            });
+        })();
+        </script>
+<script>
+    //for the most part the script on this page doesnt need to change. 
+    //its just sending information to the emailjs API
+    function sendContactInformation(){
+        let parms={
+            name : document.getElementById("name").value,
+            email : document.getElementById("email").value,
+            message : document.getElementById("message").value,
+            number : document.getElementById("number").value,
+            photoshootLocation : document.getElementById("photoshootLocation").value,
+            eventDate : document.getElementById("eventDate").value,
+            projectType : document.getElementById("projectType").value,
+            outreachMethod : document.getElementById("outreachMethod").value
 
+        }
+
+        emailjs.send("service_s2n7uws","template_m1v1x81",parms).then(alert("Email Sent!"));
+        //emailjs.send("service_s2n7uws","template_m1v1x81",parms);
+
+
+        document.getElementById("form-subtitle").innerHTML = "Thank you for submitting the form, you will get an email from us shortly!";
+        document.getElementById("form-subtitle").style = "font-weight:bold;";
+    }
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>

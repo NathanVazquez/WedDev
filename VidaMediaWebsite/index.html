@@ -63,6 +63,80 @@ body{
         opacity:0;
     }
 }
+
+@media screen and (max-width:620px){
+    #carouselExampleAutoplaying{
+        padding-top:25px;
+        margin:auto;
+        position:absolute;
+    top: 20%;
+    margin-top: -30%;
+    margin-left: -50px;
+
+    }
+    #spacer{
+        
+        padding-bottom:20%;
+        
+    }
+
+    .navbar{
+        margin-top:-20%;
+    }
+    body{
+        overflow:hidden;
+    }
+
+    #firstImageCarousel{
+
+        /*content:src("Assets/DSCF2169.jpg");*/
+    }
+    .carousel-control-prev{
+        margin-top:-70%;
+    }
+
+    .carousel-control-next{
+        margin-top:-70%;
+
+    }
+}
+
+@media screen and (min-width:621px) and (max-width:992px){
+    #carouselExampleAutoplaying{
+        padding-top:25px;
+        margin:auto;
+        position:absolute;
+    top: 10%;
+    margin-top: -30%;
+    margin-left: -50px;
+
+    }
+    #spacer{
+        
+        padding-bottom:10%;
+        
+    }
+
+    .navbar{
+        margin-top:-10%;
+    }
+    body{
+        overflow:hidden;
+    }
+
+    #firstImageCarousel{
+
+        /*content:src("Assets/DSCF2169.jpg");*/
+    }
+    .carousel-control-prev{
+        margin-top:-30%;
+    }
+
+    .carousel-control-next{
+        margin-top:-30%;
+
+    }
+}
 </style>
 </head>
 <body>
@@ -75,12 +149,25 @@ body{
         2. footer can be hidden on all versions
         3. new logo
         4. reduce image size
-        5. Add images to instragram to help get followers   -->
+        5. Add images to instragram to help get followers
+        6. create a custom 404 error page
+            1. link them back to the index of the page,
+            2. https://seranking.com/blog/404-page/ <-- good blog for 404 error
+            3. https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
+            4. https://www.searchenginejournal.com/404-page-examples/211154/ 
+        7. fix the colors of the site: use the following websites to help
+        http://colormind.io/template/paper-dashboard/
+        https://undraw.co/illustrations
+        https://www.flux-academy.com/blog/how-to-strategically-use-color-in-website-design#:~:text=To%20start%2C%20I%20recommend%20choosing,and%2010%25%20the%20accent%20color.
+        https://huemint.com/
+        -->
+
+        <div id="spacer"></div>
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin:2px; padding:2px; z-index:0; position:absolute; ">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <!--<a href="/photoalbums.html">-->
-            <img src="Assets/Carousel-Image4.jpg" class="d-block w-100" alt="...">
+            <img src="Assets/Carousel-Image4.jpg" id="firstImageCarousel" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="Assets/Carousel-Image2.jpg" class="d-block w-100" alt="...">
@@ -93,14 +180,14 @@ body{
         </div>
             <!--</a>-->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
     </div>
 
 
