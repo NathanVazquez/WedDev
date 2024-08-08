@@ -1,0 +1,30 @@
+footer{
+    color:black;
+    display:block;
+    background-color: rgba(121, 121, 121, 0.253);
+    height:30px; 
+  
+}
+
+footer>div{
+    padding-top:0px;
+    margin-top:0px;
+   
+}
+.footer-media{
+    padding-top:3px;
+color:black;
+}
+
+.footer-button-text>p{
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:var(--primary);
+}
+
+.footer-text{
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

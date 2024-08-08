@@ -1,0 +1,83 @@
+:root {
+    --primary: #fecc35;
+    --secondary: #27418c;
+    --accent1: white;
+    --accent2: #695b99;
+    --title-font: "eds-market-bold-slant", sans-serif;
+    --header-font: "eds-market-bold-slant", sans-serif;
+    --paragraph-font:"hoss-round", sans-serif ;
+  }
+  
+
+body {
+    background-image:url("assets/index-background-image.jpg");
+    /* background-size: auto 100% ; */
+    background-size: 100vw;
+    background-position: center;
+    /* background-position-y:-180px; */
+    background-position-x: auto;
+    /* backgr */
+    background-repeat:no-repeat;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+#main-body{
+    height: auto !important;
+    
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "eds-market-bold-slant", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p 
+{
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title-card-1
+{
+    color: var(--primary);
+    margin: auto;
+    text-align: center;
+    padding-top:7%;
+}
+
+#title-card-2
+{
+    padding-left:40px;
+    padding-top:8%;
+    color:white;
+}
+
+#title-card-2>h4
+{
+    color:var(--secondary);
+    padding-bottom:10px;
+}
+
+#title-card-2 > pre
+{
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#title-card-3>*{
+    color:white;
+    padding-left:70px;
+}
+
+#title-card-3>h4{
+    padding-left:30px
+}
+
+/* media query */

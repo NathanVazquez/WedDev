@@ -1,0 +1,27 @@
+.navbar
+{
+    padding-top: 15px;
+    order:-1;
+    margin-left:20px;
+    align-self:flex-start;
+    justify-content:start;
+    flex-wrap:nowrap;
+}
+
+.navbar-item>h4
+{
+    
+    font-family: "eds-market-bold-slant", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    text-align:center;
+    justify-content: center;
+
+}
+
+
+.dropdown
+{
+    opacity: 1;
+}
