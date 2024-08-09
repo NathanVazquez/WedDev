@@ -2,8 +2,8 @@ footer{
     color:black;
     display:block;
     background-color: rgba(121, 121, 121, 0.253);
-    height:30px; 
-  
+    height:33px; 
+    overflow:hidden;
 }
 
 footer>div{
@@ -27,4 +27,6 @@ color:black;
     font-family: "hoss-round", sans-serif;
     font-weight: 400;
     font-style: normal;
+    align-items: center;
+    /* margin-top: 6px; */
 }
