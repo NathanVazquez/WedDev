@@ -145,7 +145,7 @@ p
     }
  }
 
- @media (min-height:500px), (max-height: 920px) {
+ @media (max-height: 800px) {
     #title-card-1{
         padding-top:0%;
         /* color:black; */
