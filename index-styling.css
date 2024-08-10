@@ -69,13 +69,13 @@ p
     padding-bottom:10px;
 }
 
-#title-card-2 > pre
+#title-card-2 > p
 {
     font-family: "hoss-round", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align:center;
-    padding-left:6.5%;
+    padding-left:6%;
 }
 
 #title-card-3>*{
@@ -145,16 +145,10 @@ p
     }
  }
 
- @media (max-height: 800px) {
+ /* @media (max-height: 800px) {
     #title-card-1{
         padding-top:0%;
-        /* color:black; */
     }
-    body{
-        /* height:100vh; */
-        /* color:black;  */
-    }
-
     #title-card-3{
         
         display:inline;
@@ -180,7 +174,7 @@ p
     #title-card-2>p{
         margin:0 60% 0 6%;
     } 
- }
+ } */
  
  @media only screen and (orientation: landscape) {
     body {
