@@ -3,9 +3,6 @@
     --secondary: #27418c;
     --accent1: white;
     --accent2: #695b99;
-    --title-font: "eds-market-bold-slant", sans-serif;
-    --header-font: "eds-market-bold-slant", sans-serif;
-    --paragraph-font:"hoss-round", sans-serif ;
   }
   
 
@@ -18,12 +15,10 @@ body {
     background-position: center center;
     /* background-position-y:100px; */
     background-position-x: auto;
-    /* backgr */
     background-repeat:no-repeat;
     height:100vh;
     display:flex;
     flex-direction: column;
-    /* overflow:hidden; */
     /* background-size: cover; Exactly what I needed to get the background to fit on mobile */
     background-size: cover;
 }
@@ -136,7 +131,7 @@ p
     
  }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
+ /* Small devices (portrait tablets and large phones, 600px to 992 [medium sized devices]) */
  @media only screen and (min-width: 600px) and (max-width:992px) {
     #title-card-3{
         margin:15%;
@@ -149,6 +144,7 @@ p
     }
  }
 
+ /* I want to write a media query for the height of the page */
  /* @media (max-height: 800px) {
     #title-card-1{
         padding-top:0%;
@@ -180,8 +176,3 @@ p
     } 
  } */
  
- @media only screen and (orientation: landscape) {
-    body {
-      background-color: lightblue;
-    }
-  }
